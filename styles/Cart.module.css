@@ -1,0 +1,34 @@
+.container{
+    padding: 50px;
+    display: flex;
+}
+
+.imgContainer{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.left{
+    flex:2;
+}
+
+.right{
+    flex:2;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.name{
+    font-weight: 500;
+    color: #d1411e;
+    font-style: 18px;
+}
+
+.total{
+    font-weight: 500;
+    font-size: 18px;
+}

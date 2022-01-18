@@ -40,12 +40,26 @@ const Cart = () => {
               <span className={styles.quantity}>2</span>
             </td>
             <td>
-              <span className={styles.total}>2</span>
+              <span className={styles.total}>38.90</span>
             </td>
           </tr>
         </table>
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+          <div className={styles.wrapper}>
+              <h2 className={styles.title}>CART TOTAL</h2>
+              <div className={styles.totalText}>
+                <b className={styles.totalTextTitle}>Subtoal:</b>$79.60
+              </div>
+              <div className={styles.totalText}>
+                <b className={styles.totalTextTitle}>Discount:</b>$0.00
+              </div>
+              <div className={styles.totalText}>
+                <b className={styles.totalTextTitle}>Total:</b>$79.60
+              </div>
+              <button className={styles.button}>CHECKOUT</button>
+          </div>
+      </div>
     </div>
   );
 };

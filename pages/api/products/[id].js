@@ -26,4 +26,13 @@ export default async function handler(req, res) {
       return res.status(500).send(error);
     }
   }
+
+  if(method === "DELETE"){
+    try {
+      await Product.findByIdAndDelete(id);
+      res.status(201).send("Product deleted successfully");
+    } catch (error) {
+      return res.status(500).send(error);
+    }
+  }
 }
